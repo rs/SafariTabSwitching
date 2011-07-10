@@ -28,8 +28,8 @@
                 if (tabs.count >= (tabIndex + 1))
                 {
                     [frontWindow performSelector:@selector(setCurrentTabViewItem:) withObject:[tabs objectAtIndex:tabIndex]];
-                    return; // prevent event dispatching
                 }
+                return; // prevent event dispatching
             }
         }
     }
