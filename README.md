@@ -6,19 +6,13 @@ Safari Tab Switching is a Safari SIMBL plugin which allow switching between tabs
 Requirement
 ===========
 
-- Safari 5.1 (OSX Lion) - May work with older version of Safari, but this is not tested
-- [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) 1.9.9
+- Safari 5.0 (Snow Leopard) - May work with older version of Safari, but this is not tested
+- [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) 1.9.9 (packaged with the installer)
 
 Installation
 ============
 
-1. Make sure you have [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php) installed
-
-2. Download the [plugin](https://github.com/downloads/rs/SafariTabSwitching/SafariTabSwitching.bundle.zip)
-
-3. Extract to `~/Library/Application Support/SIMBL/Plugins`
-
-4. Restart Safari
+Download our [installer](https://github.com/downloads/rs/SafariTabSwitching/Safari%20Tab%20Switching.pkg) and run it then restart Safari.
 
 Usage
 =====
