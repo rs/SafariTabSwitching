@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53AAF0C013C9574400840005 /* SafariTabSwitching.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AAF0BF13C9574400840005 /* SafariTabSwitching.m */; };
+		53AAF0C613C95AE000840005 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AAF0C513C95AE000840005 /* Cocoa.framework */; };
+		53AAF0C813C95D6D00840005 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 53AAF0C713C95D6D00840005 /* JRSwizzle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53AAF08B13C9502C00840005 /* SafariTabSwitching.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariTabSwitching.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		53AAF09213C9502C00840005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53AAF09613C9502C00840005 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		53AAF0BF13C9574400840005 /* SafariTabSwitching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariTabSwitching.m; sourceTree = "<group>"; };
+		53AAF0C513C95AE000840005 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		53AAF0C713C95D6D00840005 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		53AAF0C913C95F8400840005 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53AAF08813C9502C00840005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AAF0C613C95AE000840005 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53AAF08013C9502C00840005 = {
+			isa = PBXGroup;
+			children = (
+				53AAF09013C9502C00840005 /* SafariTabSwitching */,
+				53AAF08D13C9502C00840005 /* Frameworks */,
+				53AAF08C13C9502C00840005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53AAF08C13C9502C00840005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53AAF08B13C9502C00840005 /* SafariTabSwitching.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53AAF08D13C9502C00840005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53AAF0C513C95AE000840005 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53AAF09013C9502C00840005 /* SafariTabSwitching */ = {
+			isa = PBXGroup;
+			children = (
+				53AAF09113C9502C00840005 /* Supporting Files */,
+				53AAF0BF13C9574400840005 /* SafariTabSwitching.m */,
+				53AAF0C913C95F8400840005 /* JRSwizzle.h */,
+				53AAF0C713C95D6D00840005 /* JRSwizzle.m */,
+			);
+			path = SafariTabSwitching;
+			sourceTree = "<group>";
+		};
+		53AAF09113C9502C00840005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53AAF09213C9502C00840005 /* Info.plist */,
+				53AAF09613C9502C00840005 /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53AAF08A13C9502C00840005 /* SafariTabSwitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53AAF09913C9502C00840005 /* Build configuration list for PBXNativeTarget "SafariTabSwitching" */;
+			buildPhases = (
+				53AAF08713C9502C00840005 /* Sources */,
+				53AAF08813C9502C00840005 /* Frameworks */,
+				53AAF08913C9502C00840005 /* Resources */,
+				53AAF0C413C95A2400840005 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariTabSwitching;
+			productName = SafariTabSwitching;
+			productReference = 53AAF08B13C9502C00840005 /* SafariTabSwitching.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53AAF08213C9502C00840005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Dailymotion;
+			};
+			buildConfigurationList = 53AAF08513C9502C00840005 /* Build configuration list for PBXProject "SafariTabSwitching" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53AAF08013C9502C00840005;
+			productRefGroup = 53AAF08C13C9502C00840005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53AAF08A13C9502C00840005 /* SafariTabSwitching */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53AAF08913C9502C00840005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53AAF0C413C95A2400840005 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# clean up any previous products/symbolic links in the SIMBL Plugins folder\nif [ -a \"${USER_LIBRARY_DIR}/Application Support/SIMBL/Plugins/${FULL_PRODUCT_NAME}\" ]; then\nrm -Rf \"${USER_LIBRARY_DIR}/Application Support/SIMBL/Plugins/${FULL_PRODUCT_NAME}\"\nfi\n\n# Depending on the build configuration, either copy or link to the most recent product\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n# if we're debugging, add a symbolic link to the plug-in\nln -sf \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${USER_LIBRARY_DIR}/Application Support/SIMBL/Plugins/${FULL_PRODUCT_NAME}\"\nelif [ \"${CONFIGURATION}\" == \"Release\" ]; then\n# if we're compiling for release, just copy the plugin to the SIMBL Plugins folder\ncp -Rfv \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${USER_LIBRARY_DIR}/Application Support/SIMBL/Plugins/${FULL_PRODUCT_NAME}\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53AAF08713C9502C00840005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53AAF0C013C9574400840005 /* SafariTabSwitching.m in Sources */,
+				53AAF0C813C95D6D00840005 /* JRSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		53AAF09713C9502C00840005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		53AAF09813C9502C00840005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_OPENMP_FLAGS = "-fopenmp";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		53AAF09A13C9502C00840005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = SafariTabSwitching/Prefix.pch;
+				INFOPLIST_FILE = SafariTabSwitching/Info.plist;
+				INSTALL_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		53AAF09B13C9502C00840005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = SafariTabSwitching/Prefix.pch;
+				INFOPLIST_FILE = SafariTabSwitching/Info.plist;
+				INSTALL_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53AAF08513C9502C00840005 /* Build configuration list for PBXProject "SafariTabSwitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53AAF09713C9502C00840005 /* Debug */,
+				53AAF09813C9502C00840005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53AAF09913C9502C00840005 /* Build configuration list for PBXNativeTarget "SafariTabSwitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53AAF09A13C9502C00840005 /* Debug */,
+				53AAF09B13C9502C00840005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53AAF08213C9502C00840005 /* Project object */;
+}
