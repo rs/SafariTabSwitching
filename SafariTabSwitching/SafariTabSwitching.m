@@ -12,7 +12,9 @@
 
 - (void)SafariTabeSwitching_sendEvent:(NSEvent *)event
 {
-    if (event.type == NSKeyDown && event.modifierFlags & NSCommandKeyMask && event.keyCode >= 18 && event.keyCode <= 25)
+    if (event.type == NSKeyDown
+        && (event.modifierFlags & NSDeviceIndependentModifierFlagsMask) == NSCommandKeyMask // only command modifier pressed
+        && event.keyCode >= 18 && event.keyCode <= 25)
     {
         NSUInteger tabIndex = event.keyCode - 18;
         NSWindow *frontWindow = [[NSApplication sharedApplication] frontWindow];
