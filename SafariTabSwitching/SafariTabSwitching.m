@@ -12,12 +12,20 @@
 
 - (void)SafariTabeSwitching_sendEvent:(NSEvent *)event
 {
+    static NSArray *keyCode2TabIndex = nil;
+
     if (event.type == NSKeyDown
-        && (event.modifierFlags & NSDeviceIndependentModifierFlagsMask) == NSCommandKeyMask // only command modifier pressed
-        && event.keyCode >= 18 && event.keyCode <= 25)
+        && (event.modifierFlags & NSDeviceIndependentModifierFlagsMask) == NSCommandKeyMask) // only command modifier pressed
     {
-        NSUInteger tabIndex = event.keyCode - 18;
-        if ([[NSApplication sharedApplication] respondsToSelector:@selector(frontWindow)]) // check safari API compat
+        if (!keyCode2TabIndex)
+        {
+            keyCode2TabIndex = [[NSArray alloc] initWithObjects:@"18", @"19", @"20", @"21", @"23", @"22", @"26", @"28", @"25", nil];
+        }
+
+        NSUInteger tabIndex = [keyCode2TabIndex indexOfObject:[[NSNumber numberWithInt:event.keyCode] stringValue]];
+
+        if (tabIndex != NSNotFound
+            && [[NSApplication sharedApplication] respondsToSelector:@selector(frontWindow)]) // check safari API compat
         {
             NSWindow *frontWindow = [[NSApplication sharedApplication] performSelector:@selector(frontWindow)];
 
