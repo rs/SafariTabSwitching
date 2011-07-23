@@ -36,6 +36,10 @@
 			<key>MinBundleVersion</key>
 			<string>6533</string>
 		</dict>
+		<dict>
+			<key>BundleIdentifier</key>
+			<string>org.webkit.nightly.WebKit</string>
+		</dict>
 	</array>
 </dict>
 </plist>
