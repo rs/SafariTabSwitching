@@ -6,6 +6,7 @@
 //  Copyright 2011 Dailymotion. All rights reserved.
 //
 
+#import "SafariTabSwitching.h"
 #import "JRSwizzle.h"
 
 @implementation NSApplication(SafariTabSwitching)
@@ -47,14 +48,17 @@
 
 @end
 
-@interface SafariTabSwitching : NSObject
-@end
-
 @implementation SafariTabSwitching
+@dynamic pluginVersion;
+
++ (NSString *)pluginVersion
+{
+    return [[[NSBundle bundleForClass:self] infoDictionary] objectForKey:@"CFBundleVersion"];
+}
 
 + (void)load
 {
-    NSLog(@"Safari Tab Switching Loaded");
+    NSLog(@"Safari Tab Switching %@ Loaded", self.pluginVersion);
     [NSClassFromString(@"BrowserApplication") jr_swizzleMethod:@selector(sendEvent:) withMethod:@selector(SafariTabeSwitching_sendEvent:) error:NULL];
 
 }

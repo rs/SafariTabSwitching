@@ -13,6 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5389E8BD13DB17DC00AD2BCD /* SafariTabSwitching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariTabSwitching.h; sourceTree = "<group>"; };
 		53AAF08B13C9502C00840005 /* SafariTabSwitching.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariTabSwitching.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AAF09213C9502C00840005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53AAF09613C9502C00840005 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				53AAF09113C9502C00840005 /* Supporting Files */,
+				5389E8BD13DB17DC00AD2BCD /* SafariTabSwitching.h */,
 				53AAF0BF13C9574400840005 /* SafariTabSwitching.m */,
 				53AAF0C913C95F8400840005 /* JRSwizzle.h */,
 				53AAF0C713C95D6D00840005 /* JRSwizzle.m */,

@@ -12,7 +12,7 @@ Requirement
 Installation
 ============
 
-Download our [installer](https://github.com/downloads/rs/SafariTabSwitching/Safari%20Tab%20Switching.pkg) and run it then restart Safari.
+Download our [installer](https://github.com/downloads/rs/SafariTabSwitching/Safari%20Tab%20Switching-1.1.pkg) and run it then restart Safari.
 
 Usage
 =====
