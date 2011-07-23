@@ -25,18 +25,17 @@
 
         NSUInteger tabIndex = [keyCode2TabIndex indexOfObject:[[NSNumber numberWithInt:event.keyCode] stringValue]];
 
-        if (tabIndex != NSNotFound
-            && [[NSApplication sharedApplication] respondsToSelector:@selector(frontWindow)]) // check safari API compat
+        if (tabIndex != NSNotFound)
         {
-            NSWindow *frontWindow = [[NSApplication sharedApplication] performSelector:@selector(frontWindow)];
+            NSWindow *keyWindow = [[NSApplication sharedApplication] keyWindow];
 
-            if ([frontWindow respondsToSelector:@selector(orderedTabViewItems)] // check safari API compat
-                && [frontWindow respondsToSelector:@selector(setCurrentTabViewItem:)])
+            if ([keyWindow respondsToSelector:@selector(orderedTabViewItems)] // check safari API compat
+                && [keyWindow respondsToSelector:@selector(setCurrentTabViewItem:)])
             {
-                NSArray *tabs = [frontWindow performSelector:@selector(orderedTabViewItems)];
+                NSArray *tabs = [keyWindow performSelector:@selector(orderedTabViewItems)];
                 if (tabs.count >= (tabIndex + 1))
                 {
-                    [frontWindow performSelector:@selector(setCurrentTabViewItem:) withObject:[tabs objectAtIndex:tabIndex]];
+                    [keyWindow performSelector:@selector(setCurrentTabViewItem:) withObject:[tabs objectAtIndex:tabIndex]];
                 }
                 return; // prevent event dispatching
             }
