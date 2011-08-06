@@ -33,10 +33,22 @@
                 && [keyWindow respondsToSelector:@selector(setCurrentTabViewItem:)])
             {
                 NSArray *tabs = [keyWindow performSelector:@selector(orderedTabViewItems)];
-                if (tabs.count >= (tabIndex + 1))
+                NSInteger newTabIndex = -1;
+                
+                if (tabIndex == 8)
                 {
-                    [keyWindow performSelector:@selector(setCurrentTabViewItem:) withObject:[tabs objectAtIndex:tabIndex]];
+                    newTabIndex = tabs.count - 1;
                 }
+                else if (tabs.count >= (tabIndex + 1))
+                {
+                    newTabIndex = tabIndex;
+                }
+                
+                if (newTabIndex >= 0)
+                {
+                    [keyWindow performSelector:@selector(setCurrentTabViewItem:) withObject:[tabs objectAtIndex:newTabIndex]];
+                }
+                    
                 return; // prevent event dispatching
             }
         }
