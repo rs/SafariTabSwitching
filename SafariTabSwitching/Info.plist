@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.1</string>
+	<string>1.2.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.2.1</string>
+	<string>1.2.2</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2011 Olivier Poitrey. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
@@ -32,7 +32,7 @@
 			<key>BundleIdentifier</key>
 			<string>com.apple.Safari</string>
 			<key>MaxBundleVersion</key>
-			<string>7535.18.5</string>
+			<string>8535.18.5</string>
 			<key>MinBundleVersion</key>
 			<string>6533</string>
 		</dict>
