@@ -108,7 +108,7 @@
 		53AAF08213C9502C00840005 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Dailymotion;
 			};
 			buildConfigurationList = 53AAF08513C9502C00840005 /* Build configuration list for PBXProject "SafariTabSwitching" */;
@@ -171,7 +171,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -201,7 +200,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -223,6 +221,7 @@
 		53AAF09A13C9502C00840005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = SafariTabSwitching/Prefix.pch;
 				INFOPLIST_FILE = SafariTabSwitching/Info.plist;
@@ -236,6 +235,7 @@
 		53AAF09B13C9502C00840005 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = SafariTabSwitching/Prefix.pch;
 				INFOPLIST_FILE = SafariTabSwitching/Info.plist;
