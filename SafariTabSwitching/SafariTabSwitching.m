@@ -52,6 +52,22 @@
                 return; // prevent event dispatching
             }
         }
+        
+    }
+    else if (event.type == NSKeyDown
+             && (event.modifierFlags & NSDeviceIndependentModifierFlagsMask) == (NSCommandKeyMask|NSShiftKeyMask) && event.keyCode == 0x11) { // keycode of 'T'
+
+        CGEventRef e = CGEventCreateKeyboardEvent(NULL, 0x6, YES); // keycode of 'Z'
+        
+        CGEventSetFlags(e, kCGEventFlagMaskCommand);
+        
+        NSEvent *new_event = [NSEvent eventWithCGEvent:e];
+        
+        CFRelease(e);
+        
+        [self SafariTabeSwitching_sendEvent:new_event];
+        
+        return;
     }
 
     [self SafariTabeSwitching_sendEvent:event];
