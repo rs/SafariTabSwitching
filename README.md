@@ -12,7 +12,7 @@ Requirement
 Installation
 ============
 
-Download our [installer](http://rsparkle.herokuapp.com/SafariTabSwitching/last) and run it then restart Safari.
+Download our [installer](https://github.com/rs/SafariTabSwitching/releases/latest) and run it then restart Safari.
 
 Usage
 =====
