@@ -20,5 +20,3 @@ Usage
 Use the command + <num> keyboard shortcut to switch between the 9 first tabs of your Safari windows.
 
 NOTE: This plugin replaces the default behavior of those hotkeys which is to open the 9 first Bookmark Bar links.
-
-As a bonus, this plugin also ad Cmd+Shift+T to reopen last closed tab.
