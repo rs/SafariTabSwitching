@@ -22,3 +22,12 @@ Use the command + <num> keyboard shortcut to switch between the 9 first tabs of 
 NOTE: This plugin replaces the default behavior of those hotkeys which is to open the 9 first Bookmark Bar links.
 
 As a bonus, this plugin also ad Cmd+Shift+T to reopen last closed tab.
+
+Uninstall
+=========
+
+Run the following command in the terminal and then restart Safari.
+
+```sh
+sudo rm -r "/Library/Application Support/SIMBL/Plugins/SafariTabSwitching.bundle"
+```
