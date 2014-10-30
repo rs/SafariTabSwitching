@@ -14,7 +14,7 @@
 - (void)SafariTabeSwitching_sendEvent:(NSEvent *)event
 {
     static NSArray *keyCode2TabIndex = nil;
-
+    
     if (event.type == NSKeyDown
         && (event.modifierFlags & NSDeviceIndependentModifierFlagsMask) == NSCommandKeyMask) // only command modifier pressed
     {
@@ -22,17 +22,18 @@
         {
             keyCode2TabIndex = [[NSArray alloc] initWithObjects:@"18", @"19", @"20", @"21", @"23", @"22", @"26", @"28", @"25", nil];
         }
-
+        
         NSUInteger tabIndex = [keyCode2TabIndex indexOfObject:[[NSNumber numberWithInt:event.keyCode] stringValue]];
-
+        
         if (tabIndex != NSNotFound)
         {
             NSWindow *keyWindow = [[NSApplication sharedApplication] keyWindow];
-
-            if ([keyWindow respondsToSelector:@selector(orderedTabViewItems)] // check safari API compat
-                && [keyWindow respondsToSelector:@selector(setCurrentTabViewItem:)])
+            NSWindowController *controller = keyWindow.windowController;
+            
+            if ([controller respondsToSelector:@selector(orderedTabs)] // check safari API compat
+                && [controller respondsToSelector:@selector(selectTab:)])
             {
-                NSArray *tabs = [keyWindow performSelector:@selector(orderedTabViewItems)];
+                NSArray *tabs = [controller performSelector:@selector(orderedTabs)];
                 NSInteger newTabIndex = -1;
                 
                 if (tabIndex == 8)
@@ -46,9 +47,9 @@
                 
                 if (newTabIndex >= 0)
                 {
-                    [keyWindow performSelector:@selector(setCurrentTabViewItem:) withObject:[tabs objectAtIndex:newTabIndex]];
+                    [controller performSelector:@selector(selectTab:) withObject:[tabs objectAtIndex:newTabIndex]];
                 }
-                    
+                
                 return; // prevent event dispatching
             }
         }
@@ -56,7 +57,7 @@
     }
     else if (event.type == NSKeyDown
              && (event.modifierFlags & NSDeviceIndependentModifierFlagsMask) == (NSCommandKeyMask|NSShiftKeyMask) && event.keyCode == 0x11) { // keycode of 'T'
-
+        
         CGEventRef e = CGEventCreateKeyboardEvent(NULL, 0x6, YES); // keycode of 'Z'
         
         CGEventSetFlags(e, kCGEventFlagMaskCommand);
@@ -69,7 +70,7 @@
         
         return;
     }
-
+    
     [self SafariTabeSwitching_sendEvent:event];
 }
 
@@ -87,7 +88,7 @@
 {
     NSLog(@"Safari Tab Switching %@ Loaded", self.pluginVersion);
     [NSClassFromString(@"BrowserApplication") jr_swizzleMethod:@selector(sendEvent:) withMethod:@selector(SafariTabeSwitching_sendEvent:) error:NULL];
-
+    
 }
 
 @end
