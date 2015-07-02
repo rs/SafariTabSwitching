@@ -3,6 +3,8 @@ What is this?
 
 Safari Tab Switching is a Safari SIMBL plugin which allow switching between tabs using Cmd+1-9.
 
+NOTE: Good news! The feature provided by this plugin has been integrated by Apple in El Capitain. Go to Safari preferences > tabs and check "⌘-1 through ⌘-9 switches tabs".
+
 Requirement
 ===========
 
