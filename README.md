@@ -1,3 +1,8 @@
+> Note on El Capitan
+> ==================
+> Great news! Apple has finaly included the capability offered by this plugin in Safari 9.
+> Please read [#50](https://github.com/rs/SafariTabSwitching/issues/50) for more info.
+
 What is this?
 =============
 
